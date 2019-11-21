@@ -122,3 +122,17 @@
     119.md
     120.md
     )
+
+set(OUTPUT_BOOK_NAME_0001 0001三國演義)
+
+add_custom_target(
+    EBOOK_0001
+    ALL
+    pandoc
+        ${BOOK_SOURCE_0001_FILES}
+        -o ${CMAKE_CURRENT_BINARY_DIR}/${OUTPUT_BOOK_NAME_0001}.epub
+    WORKING_DIRECTORY
+        ${CMAKE_CURRENT_SOURCE_DIR}
+    COMMENT
+        "Generating e-book 0001 ..."
+    )
