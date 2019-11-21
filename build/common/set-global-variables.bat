@@ -1,1 +1,1 @@
-set VSSolutionName="BaseProject"
+set VSSolutionName="EBook"
